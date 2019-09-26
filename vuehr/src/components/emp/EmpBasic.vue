@@ -47,7 +47,7 @@
         <div>
           <transition name="slide-fade">
             <div
-              style="margin-bottom: 10px;border: 1px;border-radius: 5px;border-style: solid;padding: 5px 0px 5px 0px;box-sizing:border-box;border-color: #20a0ff"
+              style="margin-bottom: 10px;border: 1px;border-radius: 5px;border-style: solid;padding: 5px 0px 5px 0px;box-sizing:border-box;border-color: #5597b4"
               v-show="advanceSearchViewVisible">
               <el-row>
                 <el-col :span="5">

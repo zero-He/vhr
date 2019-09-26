@@ -128,7 +128,7 @@
           _this.eploading.splice(index, 1, false);
           if (resp && resp.status == 200) {
             var data = resp.data;
-            
+
             if (data.status == 200) {
               _this.refreshHr(hrId, index);
             }
@@ -171,7 +171,7 @@
           _this.cardLoading.splice(index, 1, false)
           if (resp && resp.status == 200) {
             var data = resp.data;
-            
+
             if (data.status == 'error') {
               _this.refreshHr(hrId, index);
             }
@@ -209,7 +209,7 @@
           _this.fullloading = false;
           if (resp && resp.status == 200) {
             var data = resp.data;
-           
+
             if (data.status == 'success') {
               _this.initCards();
               _this.loadAllRoles();
@@ -222,7 +222,8 @@
 </script>
 <style>
   .user-info {
-    font-size: 12px;
-    color: #09c0f6;
+    font-size: 13px;
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+    color: #1b69b6;
   }
 </style>

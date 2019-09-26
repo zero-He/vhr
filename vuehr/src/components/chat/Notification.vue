@@ -23,7 +23,7 @@
               </div>
             </template>
             <div
-              style="display: flex;justify-content: flex-start;align-items: center;border-style: solid;border-width: 1px;border-color: #409eff;border-radius: 5px;padding: 4px 0px 4px 8px;box-sizing: border-box;height: 100%">
+              style="display: flex;justify-content: flex-start;align-items: center;border-style: solid;border-width: 1px;border-color: #134a81;border-radius: 5px;padding: 4px 0px 4px 8px;box-sizing: border-box;height: 100%">
               {{msg.msgContent.message}}
             </div>
           </el-collapse-item>
@@ -141,7 +141,7 @@
           _this.dialogLoading = false;
           if (resp && resp.status == 200) {
             var data = resp.data;
-            
+
             if (data.status == 'success') {
               _this.$store.state.stomp.send("/ws/nf", {}, '');
               _this.initSysMsgs();

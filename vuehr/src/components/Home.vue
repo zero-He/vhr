@@ -2,7 +2,7 @@
   <div>
     <el-container class="home-container">
       <el-header class="home-header">
-        <span class="home_title">微人事</span>
+        <span class="home_title">人事管理系统</span>
         <div style="display: flex;align-items: center;margin-right: 7px">
           <el-badge style="margin-right: 30px" :is-dot="this.$store.state.nfDot">
             <i class="fa fa-bell-o" @click="goChat" style="cursor: pointer"></i>
@@ -24,11 +24,11 @@
       <el-container>
         <el-aside width="180px" class="home-aside">
           <div style="display: flex;justify-content: flex-start;width: 180px;text-align: left;">
-            <el-menu style="background: #ececec;width: 180px;" unique-opened router>
+            <el-menu style="background: #ececec;width: 180px;color: #134a81;" unique-opened router>
               <template v-for="(item,index) in this.routes" v-if="!item.hidden">
                 <el-submenu :key="index" :index="index+''">
                   <template slot="title">
-                    <i :class="item.iconCls" style="color: #20a0ff;width: 14px;"></i>
+                    <i :class="item.iconCls" style="color: #134a81;width: 14px;"></i>
                     <span slot="title">{{item.name}}</span>
                   </template>
                   <el-menu-item width="180px"
@@ -136,7 +136,7 @@
   }
 
   .home-header {
-    background-color: #20a0ff;
+    background-color: #5597b4;
     color: #333;
     text-align: center;
     display: flex;
@@ -160,9 +160,10 @@
 
   .home_title {
     color: #fff;
-    font-size: 22px;
-    display: inline;
-    margin-left: 8px;
+    font-size: 21px;
+    font-family: Georgia, serif;
+    display: inline-block;
+    margin-left: 15px;
   }
 
   .home_userinfo {
